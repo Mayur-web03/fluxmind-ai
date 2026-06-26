@@ -561,12 +561,6 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## License
-
-This project is submitted as part of the **Frontend Battle Hackathon** and is licensed under the MIT License.
-
-See the [LICENSE](LICENSE) file for details.
-
 ---
 
 ## Author
@@ -609,7 +603,6 @@ For questions or issues:
 
 1. **GitHub Issues** - Report bugs and feature requests
 2. **Discussions** - Ask questions and share ideas
-3. **Email** - [your-email@example.com]
 
 ---
 
