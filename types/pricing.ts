@@ -1,3 +1,4 @@
+export type Currency = 'USD' | 'INR' | 'EUR'; // 'export' keyword hona zaruri hai
 export type PricingTier = "starter" | "pro" | "enterprise";
 
 export interface PricingTierConfig {
