@@ -1,0 +1,46 @@
+:root {
+  /* Color Palette */
+  --arctic-powder: #F1F6F4;
+  --mystic-mint: #D9E8E2;
+  --forsythia: #FFC801;
+  --deep-saffron: #FF9932;
+  --nocturnal-expedition: #114C5A;
+  --oceanic-noir: #172B36;
+
+  /* Semantic Colors */
+  --bg-primary: var(--oceanic-noir);
+  --bg-secondary: var(--nocturnal-expedition);
+  --bg-surface: #1E3340;
+  --bg-card: #1A2E38;
+
+  --text-primary: var(--arctic-powder);
+  --text-secondary: var(--mystic-mint);
+  --text-muted: #8BA5AE;
+
+  --accent-primary: var(--forsythia);
+  --accent-secondary: var(--deep-saffron);
+
+  --border-subtle: rgba(217, 232, 226, 0.1);
+  --border-accent: rgba(255, 200, 1, 0.3);
+
+  /* Spacing */
+  --section-padding: 96px;
+  --container-max: 1200px;
+  --container-padding: 24px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 40px rgba(255, 200, 1, 0.15);
+  --shadow-glow-teal: 0 0 40px rgba(17, 76, 90, 0.4);
+
+  /* Transitions */
+  --transition-micro: 180ms ease-out;
+  --transition-layout: 350ms ease-in-out;
+  --transition-reveal: 350ms ease-out;
+}

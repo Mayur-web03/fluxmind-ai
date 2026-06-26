@@ -1,0 +1,16 @@
+.price-value {
+  display: inline-block;
+  transition:
+    opacity 150ms ease-out,
+    transform 150ms ease-out;
+}
+
+.price-value.updating {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.price-value.updated {
+  opacity: 1;
+  transform: translateY(0);
+}

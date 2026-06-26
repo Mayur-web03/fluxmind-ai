@@ -1,0 +1,27 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+
+const MOBILE_BREAKPOINT = 768;
+
+export function useBreakpoint() {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+
+    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT}px)`);
+
+    const handler = (e: MediaQueryListEvent) => {
+      setIsMobile(e.matches);
+    };
+
+    setIsMobile(mql.matches);
+    mql.addEventListener('change', handler);
+
+    return () => mql.removeEventListener('change', handler);
+  }, []);
+
+  return { isMobile, isClient };
+}

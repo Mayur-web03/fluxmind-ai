@@ -1,0 +1,42 @@
+.pipeline-line {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: drawLine 400ms ease-out forwards;
+}
+
+.pipeline-line-1 { animation-delay: 0ms; }
+.pipeline-line-2 { animation-delay: 100ms; }
+.pipeline-line-3 { animation-delay: 200ms; }
+.pipeline-line-4 { animation-delay: 300ms; }
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.pipeline-node {
+  opacity: 0;
+  animation: nodeAppear 200ms ease-out forwards;
+}
+
+.pipeline-node-1 { animation-delay: 0ms; }
+.pipeline-node-2 { animation-delay: 100ms; }
+.pipeline-node-3 { animation-delay: 200ms; }
+.pipeline-node-4 { animation-delay: 300ms; }
+.pipeline-node-5 { animation-delay: 400ms; }
+
+@keyframes nodeAppear {
+  to { opacity: 1; }
+}
+
+.pipeline-particle {
+  animation: particleFlow 2s linear infinite;
+}
+
+@keyframes particleFlow {
+  0% { offset-distance: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; }
+}

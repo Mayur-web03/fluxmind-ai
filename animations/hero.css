@@ -1,0 +1,29 @@
+.hero-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroFadeIn 400ms ease-out forwards;
+}
+
+.hero-subtitle {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroFadeIn 400ms ease-out 100ms forwards;
+}
+
+.hero-cta {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroFadeIn 400ms ease-out 200ms forwards;
+}
+
+.hero-visual {
+  opacity: 0;
+  animation: heroFadeIn 400ms ease-out 300ms forwards;
+}
+
+@keyframes heroFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
